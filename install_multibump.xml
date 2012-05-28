@@ -23,13 +23,13 @@
 		</installation>
 	</header>
 	<action-group>
-		<open src="include/functions_content.php">
+		<open src="includes/functions_content.php">
 			<edit>
 				<find><![CDATA[if (!$auth->acl_get('f_bump', $forum_id) || $topic_bumped)]]></find>
 				<action type="replace-with"><![CDATA[if (!$auth->acl_get('f_bump', $forum_id))]]></action>
 			</edit>
 		</open>
-		<diy-instructions lang="en"><![CDATA[1) Open "include/functions_content.php"
+		<diy-instructions lang="en"><![CDATA[1) Open "includes/functions_content.php"
 2) Find "if (!$auth->acl_get('f_bump', $forum_id) || $topic_bumped)"
 3) Replace with "if (!$auth->acl_get('f_bump', $forum_id))"]]></diy-instructions>
 	</action-group>
